@@ -85,6 +85,83 @@ result12 = A12 / B12
 print("\nЗавдання 12: Поелементне ділення елементів матриць 5x5:")
 print(result12)
 
+# 13. Сума двох матриць 6x6 з випадковими числами від 1 до 10
+matrix1 = np.random.randint(1, 11, (6, 6))
+matrix2 = np.random.randint(1, 11, (6, 6))
+print("13. Сума матриць 6x6:\n", matrix1 + matrix2)
+
+# 14. Різниця двох матриць 7x7 з випадковими числами від 1 до 10
+matrix1 = np.random.randint(1, 11, (7, 7))
+matrix2 = np.random.randint(1, 11, (7, 7))
+print("14. Різниця матриць 7x7:\n", matrix1 - matrix2)
+
+# 15. Сума двох матриць 8x8 з випадковими числами від 1 до 10
+matrix1 = np.random.randint(1, 11, (8, 8))
+matrix2 = np.random.randint(1, 11, (8, 8))
+print("15. Сума матриць 8x8:\n", matrix1 + matrix2)
+
+# 16. Відношення другого стовпця другої матриці до першої (9x9)
+matrix1 = np.random.randint(1, 11, (9, 9))
+matrix2 = np.random.randint(1, 11, (9, 9))
+print("16. Відношення другого стовпця:\n", matrix2[:, 1] / matrix1[:, 1])
+
+# 17. Сума діагоналей двох матриць 2x2
+matrix1 = np.random.randint(1, 11, (2, 2))
+matrix2 = np.random.randint(1, 11, (2, 2))
+print("17. Сума діагоналей 2x2:", np.trace(matrix1), np.trace(matrix2))
+
+# 18. Сума діагоналей двох матриць 3x3
+matrix1 = np.random.randint(1, 11, (3, 3))
+matrix2 = np.random.randint(1, 11, (3, 3))
+print("18. Сума діагоналей 3x3:", np.trace(matrix1), np.trace(matrix2))
+
+# 19. Добуток елементів діагоналей двох матриць 3x3
+print("19. Добуток діагоналей 3x3:", np.prod(np.diag(matrix1)), np.prod(np.diag(matrix2)))
+
+# 20. Добуток діагоналі другої матриці 3x3
+print("20. Добуток діагоналі другої матриці 3x3:", np.prod(np.diag(matrix2)))
+
+# 21. Сума всіх елементів першої матриці 3x3
+print("21. Сума елементів першої матриці 3x3:", np.sum(matrix1))
+
+# 22. Сума всіх елементів другої матриці 3x3
+print("22. Сума елементів другої матриці 3x3:", np.sum(matrix2))
+
+# 23. Добуток всіх елементів першої матриці 3x3
+print("23. Добуток елементів першої матриці 3x3:", np.prod(matrix1))
+
+# 24. Добуток всіх елементів другої матриці 2x2 (від -5 до 3)
+matrix2 = np.random.randint(-5, 4, (2, 2))
+print("24. Добуток елементів другої матриці 2x2:", np.prod(matrix2))
+
+# 25. Сума всіх елементів обох матриць 2x2 (від -2 до 2)
+matrix1 = np.random.randint(-2, 3, (2, 2))
+matrix2 = np.random.randint(-2, 3, (2, 2))
+print("25. Сума елементів обох матриць 2x2:", np.sum(matrix1) + np.sum(matrix2))
+
+# 26. Добуток всіх елементів обох матриць 3x3 (від 1 до 3)
+matrix1 = np.random.randint(1, 4, (3, 3))
+matrix2 = np.random.randint(1, 4, (3, 3))
+print("26. Добуток елементів обох матриць 3x3:", np.prod(matrix1) * np.prod(matrix2))
+
+# 27. Різниця всіх елементів першої матриці 3x3 (від -1 до 5)
+matrix1 = np.random.randint(-1, 6, (3, 3))
+print("27. Різниця елементів першої матриці 3x3:", np.sum(matrix1) - np.sum(matrix2))
+
+# 28. Різниця елементів двох матриць 3x3 (від 1 до 3)
+matrix1 = np.random.randint(1, 4, (3, 3))
+matrix2 = np.random.randint(1, 4, (3, 3))
+print("28. Різниця елементів двох матриць 3x3:\n", matrix1 - matrix2)
+
+# 29. Відношення елементів першої матриці до другої 3x3 (від 1 до 5)
+matrix1 = np.random.randint(1, 6, (3, 3))
+matrix2 = np.random.randint(1, 6, (3, 3))
+print("29. Відношення елементів першої матриці до другої:\n", matrix1 / matrix2)
+
+# 30. Відношення елементів другої матриці до першої 3x3 (від -3 до 3)
+matrix1 = np.random.randint(-3, 4, (3, 3))
+matrix2 = np.random.randint(-3, 4, (3, 3))
+print("30. Відношення елементів другої матриці до першої:\n", matrix2 / matrix1)
 # Висновок
 # У ході виконання лабораторної роботи ми створили матриці різних розмірів,
 # виконали операції додавання, віднімання, поелементного ділення
